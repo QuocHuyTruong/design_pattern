@@ -15,12 +15,12 @@ public class HoaDon {
     HoaDonHeader HD;
     List<CTHD> CTHD = new ArrayList<>();
 
-    public HoaDon(Builder builder) 
+    private HoaDon(Builder builder) 
     {
         this.HD = builder.HDH;
         this.CTHD = builder.DSCTHD;
     }
-public static class Builder
+    public static class Builder
     {
         HoaDonHeader HDH;
         ArrayList<CTHD> DSCTHD = new ArrayList<>();

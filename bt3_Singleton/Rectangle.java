@@ -10,7 +10,7 @@ package bt3_Singleton;
  * @author DELL
  */
 public class Rectangle extends Shape{
-    public static Rectangle rectangle;
+    private static Rectangle rectangle;
     public Rectangle(String brush, String paper, String frame) {
         super(brush, paper, frame);
     }
