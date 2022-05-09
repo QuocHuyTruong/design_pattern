@@ -22,7 +22,7 @@ public class CompositeMain {
         AbstracFile f2 = new File("a2", "b", "c");
         AbstracFile f3 = new File("a3", "b", "c");
         AbstracFile f4 = new File("a4", "b", "c");
-        
+
         AbstracFile F = new Folder("D:\\", "F1", "10/10/2022");
         AbstracFile F2 = new Folder("D:\\", "F2", "10/10/2022");
         AbstracFile F3 = new Folder("D:\\", "F3", "10/10/2022");
@@ -37,5 +37,5 @@ public class CompositeMain {
         System.out.println(F.getStringTreeFolder());
 
     }
-    
+
 }
