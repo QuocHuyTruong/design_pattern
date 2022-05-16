@@ -19,6 +19,7 @@ public class BT_ObserverMain {
         TaiKhoan t = new TaiKhoan(100);
         a.attach(t);
         a.ruttien(10);
+        a.ruttien(10);
 //        System.out.println(t.ktsodu(90));
 //        System.out.println(a.kttienrut(90));
     }
