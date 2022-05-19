@@ -23,7 +23,7 @@ public class TIenDienMain {
         ITinhTien bac6 = new TinhTien((float)2.927, 401, 1000);
         
         bac1.thietlapcaohon(bac2).thietlapcaohon(bac3).thietlapcaohon(bac4).thietlapcaohon(bac5).thietlapcaohon(bac6);
-        System.out.println(bac1.tinhtien(51));
+        System.out.println(bac1.tinhtien(49));
         
         ITinhTien bac = new TinhTienTraTruoc((float)2.461);
         System.out.println(bac.tinhtien(10));
