@@ -12,6 +12,8 @@ public class XepTien implements IXepTien{
     int tien;
     int min;
     IXepTien caohon;
+    int soto;
+    int tiendu;
     public XepTien(int tien, int min) {
         this.tien = tien;
         this.min = min;
@@ -36,7 +38,7 @@ public class XepTien implements IXepTien{
         }else{
             return caohon.xeptien(sotien);
         }
+        
 
-    }
-    
+    }    
 }

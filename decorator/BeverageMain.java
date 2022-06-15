@@ -17,9 +17,9 @@ public class BeverageMain {
         // TODO code application logic here
         Beverage b = new DarkRoast("6");
         b = new Soy(b, "5");
-        b=new Milk(b, "4");
+        b = new Milk(b, "4");
         System.out.println(b.getDescription());
         System.out.println(b.cost());
     }
-    
+
 }

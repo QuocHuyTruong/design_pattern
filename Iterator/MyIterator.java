@@ -9,5 +9,8 @@ package Iterator;
  * @author DELL
  */
 public interface MyIterator {
-    
+    Object first();
+    Object next();
+    Object isDone();
+    Object currentItem();
 }

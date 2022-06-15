@@ -13,7 +13,7 @@ public class TinhTien implements ITinhTien{
     int min;
     int max;
     ITinhTien caohon;
-    float tongtien=0;
+    float tongtien =0;
 
     public TinhTien(float tien, int min, int max) {
         this.tien = tien;
@@ -21,29 +21,26 @@ public class TinhTien implements ITinhTien{
         this.max = max;
     }
 
+    
+    
+
     @Override
     public ITinhTien thietlapcaohon(ITinhTien tinhtien) {
         caohon = tinhtien;
         return tinhtien;
     }
+    public float success(float sodien){
+        return caohon.tinhtien(sodien);
+    }
 
     @Override
-//    public String tinhtien(float sodien) {
-//        if(sodien >= min && sodien <= max){
-//            return "" + sodien*tien;
-//        }else{
-//            return caohon.tinhtien(sodien);
-//        }
-//    }
-    public String tinhtien(float sodien) {
+    public float tinhtien(float sodien) {
         if(sodien <= max){
-            tongtien = tongtien + (sodien-min)*tien;
-            return "" + tongtien;
+            return (sodien-min)*tien;
         }else{
-            tongtien = tongtien + (max-min)*tien;
-            return "" + tongtien;
+            return (max-min)*tien + success(sodien);
         }
-//      caohon.tinhtien(sodien);
     }
+
     
 }

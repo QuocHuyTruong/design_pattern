@@ -23,7 +23,7 @@ public class Nhan extends BieuThucDecorator{
 
     @Override
     public String bieuThuc() {
-        return bieuthuc.giaTri() + " " + toanHang;
+        return bieuthuc.bieuThuc()+ "*" + toanHang;
     }
     
 }

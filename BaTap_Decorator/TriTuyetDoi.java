@@ -23,6 +23,6 @@ public class TriTuyetDoi extends BieuThucDecorator{
 
     @Override
     public String bieuThuc() {
-        return "|"+ bieuthuc.giaTri()+ "|";
+        return "|"+ bieuthuc.bieuThuc()+ "|";
     }
 }

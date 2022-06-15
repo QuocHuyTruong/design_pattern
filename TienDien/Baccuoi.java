@@ -8,15 +8,14 @@ package TienDien;
  *
  * @author DELL
  */
-public class TinhTienTraTruoc implements ITinhTien{
-    
+public class Baccuoi implements ITinhTien{
     float tien;
+    int min;
 
-    public TinhTienTraTruoc(float tien) {
+    public Baccuoi(float tien, int min) {
         this.tien = tien;
+        this.min = min;
     }
-    
-    
 
     @Override
     public ITinhTien thietlapcaohon(ITinhTien tinhtien) {
@@ -25,7 +24,7 @@ public class TinhTienTraTruoc implements ITinhTien{
 
     @Override
     public float tinhtien(float sodien) {
-        return sodien*tien;
+       return (sodien-min)*tien;
     }
     
 }

@@ -10,5 +10,5 @@ package TienDien;
  */
 public interface ITinhTien {
     ITinhTien thietlapcaohon(ITinhTien tinhtien);
-    String tinhtien(float sodien);
+    float tinhtien(float sodien);
 }
